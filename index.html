@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Momentum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,700;6..72,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="newspaper">
+      <div class="top">
+        <p>newspaper</p>
+        <h2 id="clock">00:00:00</h2>
+        <p>Page 1</p>
+      </div>
+
+      <div class="title">
+        <h1>Daily News</h1>
+      </div>
+
+      <div class="main">
+        <div class="side">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/wcIf3huwFhc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div id="weather">
+            <h2>Today's weather.</h2>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="greeting-todo">
+          <form id="login-form" class="hidden">
+            <input
+              required
+              maxlength="15"
+              type="text"
+              placeholder="Please write your name."
+            />
+            <br />
+            <button>Log In</button>
+          </form>
+          <h1 id="greeting" class="hidden"></h1>
+          <form id="todo-form">
+            <input
+              type="text"
+              placeholder="Write a To Do and Press Enter"
+              required
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
+      <div id="quote">
+        <span></span>
+        <br />
+        <span></span>
+      </div>
+      <div id="aside"></div>
+    </div>
+    <script src="./JS/greetings.js"></script>
+    <script src="./JS/clock.js"></script>
+    <script src="./JS/quotes.js"></script>
+    <script src="./JS/background.js"></script>
+    <script src="./JS/todo.js"></script>
+    <script src="./JS/weather.js"></script>
+  </body>
+</html>
